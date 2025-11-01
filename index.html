@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squash the Creeps - Your First 3D Game | Godot Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="images/godot-logo.png" alt="Godot Logo" class="logo-img">
+                    <span class="logo-text">Squash the Creeps</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#features">Features</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#download" class="nav-download">Download</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Squash the</span>
+                        <span class="title-line highlight">Creeps</span>
+                    </h1>
+                    <p class="hero-subtitle">Your First Complete 3D Game with Godot Engine</p>
+                    <p class="hero-description">
+                        A step-by-step tutorial series where you'll create a simple yet complete 3D game. 
+                        Jump, squash monsters, and learn the fundamentals of 3D game development!
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary btn-download">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Game
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="preview-container">
+                        <img src="images/animatedpreview.webp" alt="Squash the Creeps Game Preview" class="animated-preview">
+                        <div class="preview-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About the Game</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        <strong>Squash the Creeps</strong> is a beginner-friendly 3D game tutorial that teaches you 
+                        the fundamentals of game development using Godot Engine. This tutorial builds upon the 
+                        popular 2D version but introduces you to the exciting world of 3D game creation.
+                    </p>
+                    <p class="about-paragraph">
+                        In this game, you control a character that can move and <strong>jump</strong> to squash 
+                        monsters that spawn randomly around the game area. Your goal is to survive as long as 
+                        possible while squashing as many creeps as you can!
+                    </p>
+                    <div class="highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎮</div>
+                            <div class="highlight-text">
+                                <h3>Beginner Friendly</h3>
+                                <p>Perfect for those new to 3D game development</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">📚</div>
+                            <div class="highlight-text">
+                                <h3>Step-by-Step</h3>
+                                <p>Detailed instructions guide you through every step</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🚀</div>
+                            <div class="highlight-text">
+                                <h3>Complete Project</h3>
+                                <p>End with a fully playable 3D game</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/staticscreenshot.PNG" alt="Game Screenshot" class="screenshot">
+                    <div class="image-frame"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What You'll Learn</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">3D Coordinates</h3>
+                    <p class="feature-description">Master 3D space and implement jumping mechanics</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="100">
+                    <div class="feature-icon">🏃</div>
+                    <h3 class="feature-title">Character Movement</h3>
+                    <p class="feature-description">Use kinematic bodies to move characters and detect collisions</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="200">
+                    <div class="feature-icon">👾</div>
+                    <h3 class="feature-title">Monster Spawning</h3>
+                    <p class="feature-description">Code procedural gameplay by instancing monsters at intervals</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="300">
+                    <div class="feature-icon">💥</div>
+                    <h3 class="feature-title">Physics & Collisions</h3>
+                    <p class="feature-description">Use physics layers and groups to detect interactions</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="400">
+                    <div class="feature-icon">🎬</div>
+                    <h3 class="feature-title">Animations</h3>
+                    <p class="feature-description">Design movement animations and control speed at runtime</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="500">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">UI System</h3>
+                    <p class="feature-description">Draw user interface elements in your 3D game</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Game Screenshots</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="gallery-content">
+                <div class="gallery-item">
+                    <img src="images/staticscreenshot.PNG" alt="Squash the Creeps Screenshot" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <p>Gameplay Screenshot</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/animatedpreview.webp" alt="Animated Preview" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <p>Animated Preview</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-icon">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </div>
+                <h2 class="download-title">Ready to Play?</h2>
+                <p class="download-description">
+                    Download the complete game and start squashing creeps! This package includes 
+                    the full source code and all assets.
+                </p>
+                <a href="downloads/Squash_The_Creeps.rar" class="btn btn-download-large" download>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Squash the Creeps
+                </a>
+                <p class="download-note">
+                    <img src="images/windows-logo.png" alt="Windows" class="platform-logo">
+                    Compatible with Windows
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/godot-logo.png" alt="Godot Logo" class="footer-logo">
+                    <p>Squash the Creeps</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://docs.godotengine.org/en/stable/getting_started/first_3d_game/index.html" target="_blank" rel="noopener noreferrer">Official Tutorial</a>
+                    <a href="https://godotengine.org" target="_blank" rel="noopener noreferrer">Godot Engine</a>
+                </div>
+                <div class="footer-text">
+                    <p>Created as part of the Godot Engine tutorial series</p>
+                    <p class="copyright">© 2024 Godot Community</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
